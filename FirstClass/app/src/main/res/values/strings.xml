@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FirstClass</string>
+    <string name="tv_main_act_title">Hello and welcome\nto my App</string>
+    <string name="tv_main_act_subtitle">Enter your name then\nclick on the button bellow to open\na new activity</string>
+    <string name="i_m_a_button">validate</string>
+    <string name="tv_second_act_title">Thank you</string>
+    <string name="tv_edittext_name">Jean-Paul</string>
+</resources>
