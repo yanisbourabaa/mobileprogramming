@@ -32,6 +32,7 @@ public class CartActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(CartActivity.this, FinishActivity.class);
                 i.putExtra(PRICE, mCartmanager.getFinalPrice());
+                mCartmanager.clearCart();
                 startActivity(i);
             }
         });

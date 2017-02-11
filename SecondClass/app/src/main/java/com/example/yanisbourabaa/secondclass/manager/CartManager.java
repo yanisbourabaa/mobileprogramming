@@ -64,4 +64,8 @@ public class CartManager {
         }
         return result;
     }
+
+    public void clearCart() {
+        cart = new HashMap<>();
+    }
 }

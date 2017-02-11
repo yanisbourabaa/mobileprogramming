@@ -75,32 +75,29 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Product> getProductList3() {
         final List<Product> productList3 = new ArrayList<>();
-        productList3.add(new Product(3, "smoothie", "http://www.rd.com/wp-content/uploads/sites/2/2016/05/06-best-worst-drinks-diabetes-fruit.jpg", 3.34f));
-        productList3.add(new Product(3, "smoothie", "http://www.rd.com/wp-content/uploads/sites/2/2016/05/06-best-worst-drinks-diabetes-fruit.jpg", 3.34f));
-        productList3.add(new Product(3, "smoothie", "http://www.rd.com/wp-content/uploads/sites/2/2016/05/06-best-worst-drinks-diabetes-fruit.jpg", 3.34f));
-        productList3.add(new Product(3, "smoothie", "http://www.rd.com/wp-content/uploads/sites/2/2016/05/06-best-worst-drinks-diabetes-fruit.jpg", 3.34f));
-        productList3.add(new Product(3, "smoothie", "http://www.rd.com/wp-content/uploads/sites/2/2016/05/06-best-worst-drinks-diabetes-fruit.jpg", 3.34f));
+        productList3.add(new Product(10, "Smoothie", "http://www.rd.com/wp-content/uploads/sites/2/2016/05/06-best-worst-drinks-diabetes-fruit.jpg", 3.34f));
+        productList3.add(new Product(11, "MilkShake", "https://blog.banggood.com/wp-content/uploads/2014/08/1721923933.jpg", 8.80f));
+        productList3.add(new Product(12, "Ice Tea", "http://www.demotivateur.fr/images-buzz/6538/iced-tea-1.jpg", 9.32f));
+        productList3.add(new Product(13, "Mojito", "http://www.masculin.com/images/article/12863/variante-mojito.jpg", 8.23f));
         return productList3;
     }
 
     private List<Product> getProductList2() {
         List<Product> productList2 = new ArrayList<>();
-        productList2.add(new Product(2, "pasta", "http://assets.simplyrecipes.com/wp-content/uploads/2016/02/shrimp-pasta-vodka-horiz-a-1600.jpg", 2.45f));
-        productList2.add(new Product(2, "pasta", "http://assets.simplyrecipes.com/wp-content/uploads/2016/02/shrimp-pasta-vodka-horiz-a-1600.jpg", 2.45f));
-        productList2.add(new Product(2, "pasta", "http://assets.simplyrecipes.com/wp-content/uploads/2016/02/shrimp-pasta-vodka-horiz-a-1600.jpg", 2.45f));
-        productList2.add(new Product(2, "pasta", "http://assets.simplyrecipes.com/wp-content/uploads/2016/02/shrimp-pasta-vodka-horiz-a-1600.jpg", 2.45f));
-        productList2.add(new Product(2, "pasta", "http://assets.simplyrecipes.com/wp-content/uploads/2016/02/shrimp-pasta-vodka-horiz-a-1600.jpg", 2.45f));
+        productList2.add(new Product(5, "Pasta", "http://assets.simplyrecipes.com/wp-content/uploads/2016/02/shrimp-pasta-vodka-horiz-a-1600.jpg", 2.45f));
+        productList2.add(new Product(6, "Burger", "https://media.timeout.com/images/102945700/image.jpg", 10.30f));
+        productList2.add(new Product(7, "Tacos", "https://d1doqjmisr497k.cloudfront.net/~/media/Recipe-Photos/McCormick/Main-Dishes/1007x545/Fiesta-Tacos.ashx?vd=20130326T192320Z&hash=0F1DDE4989DDB046E627CF0BF5437C999A647714", 6.60f));
+        productList2.add(new Product(8, "Ratatouille", "http://2.bp.blogspot.com/-5GYzMWWLQTc/VRFsvXeQWjI/AAAAAAAAMSk/dRly2w1HOi4/s1600/French%2BRatatouille%2BRecipe.JPG", 8.30f));
+        productList2.add(new Product(9, "Couscous", "http://photos1.blogger.com/blogger/6339/1978/1600/couscous%20poulet-agneau.jpg", 2.45f));
         return productList2;
     }
 
     private List<Product> getProductList1() {
         List<Product> productList1 = new ArrayList<>();
-        productList1.add(new Product(1, "Salmon", "https://static01.nyt.com/images/2016/04/13/dining/13PAIRING/13PAIRING-superJumbo.jpg", 5.29f));
-        productList1.add(new Product(1, "Salmon", "https://static01.nyt.com/images/2016/04/13/dining/13PAIRING/13PAIRING-superJumbo.jpg", 5.29f));
-        productList1.add(new Product(1, "Salmon", "https://static01.nyt.com/images/2016/04/13/dining/13PAIRING/13PAIRING-superJumbo.jpg", 5.29f));
-        productList1.add(new Product(1, "Salmon", "https://static01.nyt.com/images/2016/04/13/dining/13PAIRING/13PAIRING-superJumbo.jpg", 5.29f));
-        productList1.add(new Product(1, "Salmon", "https://static01.nyt.com/images/2016/04/13/dining/13PAIRING/13PAIRING-superJumbo.jpg", 5.29f));
-        productList1.add(new Product(1, "Salmon", "https://static01.nyt.com/images/2016/04/13/dining/13PAIRING/13PAIRING-superJumbo.jpg", 5.29f));
+        productList1.add(new Product(1, "Soup", "http://static.cuisineaz.com/680x357/i70854-soupe-a-la-tomate-rapide.jpg", 5.3f));
+        productList1.add(new Product(2, "Eggs mayo", "https://static.restovisio.com/uploads/2015/09/Oeufs-Durs-Mayonnaise.jpg", 3.30f));
+        productList1.add(new Product(3, "Salad", "https://www.wagamama.com/-/media/WagamamaMainsite/hero-pod-images/salads.jpg", 5.40f));
+        productList1.add(new Product(4, "Sushi", "https://i.ytimg.com/vi/jPLJbSp6vKY/maxresdefault.jpg", 5.40f));
         return productList1;
     }
 }

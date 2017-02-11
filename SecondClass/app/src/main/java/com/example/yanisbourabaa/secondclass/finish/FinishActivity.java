@@ -15,7 +15,13 @@ public class FinishActivity extends AppCompatActivity {
         setContentView(R.layout.activity_finish);
 
         Float finalPrice = getIntent().getFloatExtra(CartActivity.PRICE, 0.0f);
-        String finalPriceString = finalPrice.toString() + "$";
+
+        String finalPriceString = String.format("%.2f$", finalPrice);
         ((TextView)findViewById(R.id.finish_price)).setText(finalPriceString);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }

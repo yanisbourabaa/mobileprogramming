@@ -6,4 +6,5 @@
     <color name="colorAccentDarker">#AF5DBD</color>
     <color name="colorPrimaryClear">#64C0FF</color>
     <color name="red">#EC644B</color>
+    <color name="pale_grey">#CCCCCC</color>
 </resources>
