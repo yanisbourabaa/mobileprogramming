@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_starters"
+        android:enabled="true"
+        android:title="@string/starters"
+        android:icon="@drawable/starter"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_entrees"
+        android:enabled="true"
+        android:icon="@drawable/entree"
+        android:title="@string/entrees"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_drinks"
+        android:enabled="true"
+        android:icon="@drawable/drink"
+        android:title="@string/drinks"
+        app:showAsAction="ifRoom" />
+</menu>
