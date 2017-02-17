@@ -1,6 +1,8 @@
 package com.example.yanisbourabaa.secondclass;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +19,7 @@ import java.util.List;
  * Created by yanisbourabaa on 10/02/2017.
  */
 
-public class ProductListAdapter extends RecyclerView.Adapter<ProductListViewHolder> implements QuantityListener {
+public class ProductListAdapter extends RecyclerView.Adapter<ProductListViewHolder> implements QuantityListener, ImageClickedListener {
     private CartManager mCartManager;
     private Context context;
     List<Product> products = new ArrayList<>();
@@ -55,6 +57,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListViewHold
 
         holder.setPosition(position);
         holder.setQuantityListener(this);
+        holder.setImageClickedListener(this);
     }
 
     @Override
@@ -69,5 +72,12 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListViewHold
         Product currentProduct = products.get(position);
         mCartManager.removeProduct(currentProduct);
         notifyDataSetChanged();
+    }
+
+    @Override
+    public void onImageClicked(int position) {
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(products.get(position).getRecipeUrl()));
+        context.startActivity(i);
     }
 }

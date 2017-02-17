@@ -18,6 +18,7 @@ public class ProductListViewHolder extends RecyclerView.ViewHolder{
     private Button removeButton;
     private QuantityListener quantityListener;
     private int position;
+    private ImageClickedListener imageClickedListener;
 
     public ProductListViewHolder(View itemView) {
         super(itemView);
@@ -41,10 +42,21 @@ public class ProductListViewHolder extends RecyclerView.ViewHolder{
                 quantityListener.removeProduct(position);
             }
         });
+
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imageClickedListener.onImageClicked(position);
+            }
+        });
     }
 
     public void setQuantityListener(QuantityListener quantityListener) {
         this.quantityListener = quantityListener;
+    }
+
+    public void setImageClickedListener(ImageClickedListener imageClickedListener) {
+        this.imageClickedListener = imageClickedListener;
     }
 
     public void setPosition(int position) {

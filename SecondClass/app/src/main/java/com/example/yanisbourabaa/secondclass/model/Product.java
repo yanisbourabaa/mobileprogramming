@@ -10,12 +10,14 @@ public class Product {
     private String name;
     private int quantity = 0;
     private Float price;
+    private String recipeUrl;
 
-    public Product(int id, String name, String image, Float price) {
+    public Product(int id, String name, String image, Float price, String recipeUrl) {
         this.id = id;
         this.name = name;
         this.image = image;
         this.price = price;
+        this.recipeUrl = recipeUrl;
     }
 
     public String getName() {
@@ -48,5 +50,13 @@ public class Product {
 
     public Float getPrice() {
         return price;
+    }
+
+    public String getRecipeUrl() {
+        return recipeUrl;
+    }
+
+    public void setRecipeUrl(String recipeUrl) {
+        this.recipeUrl = recipeUrl;
     }
 }
