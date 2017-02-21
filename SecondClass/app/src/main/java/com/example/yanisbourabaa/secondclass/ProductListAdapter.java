@@ -19,7 +19,7 @@ import java.util.List;
  * Created by yanisbourabaa on 10/02/2017.
  */
 
-public class ProductListAdapter extends RecyclerView.Adapter<ProductListViewHolder> implements QuantityListener, ImageClickedListener {
+public class ProductListAdapter extends RecyclerView.Adapter<ProductListViewHolder> implements QuantityListener, ImageClickedListener, RatingListener {
     private CartManager mCartManager;
     private Context context;
     List<Product> products = new ArrayList<>();
@@ -53,11 +53,15 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListViewHold
         holder.quantity.setText(quantity);
         String price = currentProduct.getPrice().toString() + "$";
         holder.price.setText(price);
+        holder.ratingBar.setRating(currentProduct.getRate());
+
+
         Glide.with(context).load(currentProduct.getImage()).into(holder.image);
 
         holder.setPosition(position);
         holder.setQuantityListener(this);
         holder.setImageClickedListener(this);
+        holder.setOnRatingChangeListener(this);
     }
 
     @Override
@@ -79,5 +83,10 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListViewHold
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(products.get(position).getRecipeUrl()));
         context.startActivity(i);
+    }
+
+    @Override
+    public void onRateChange(int position, int rate) {
+        products.get(position).setRate(rate);
     }
 }

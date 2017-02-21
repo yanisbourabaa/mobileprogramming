@@ -47,6 +47,16 @@
             android:text="in your cart"
             android:fontFamily="sans-serif-light"
             android:paddingBottom="8dp"/>
+        <RatingBar
+            android:id="@+id/cell_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="2.0"
+            android:progressTint="@color/colorPrimary"
+            android:secondaryProgressTint="@color/colorPrimary"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -10,8 +10,8 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     public static final String NAME = "NAME";
-    Button button;
-    EditText editText;
+    private Button button;
+    private EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.btn_main_act);
         editText = (EditText) findViewById(R.id.et_main_act);
+
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,5 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
     }
 }
