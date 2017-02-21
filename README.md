@@ -33,3 +33,11 @@ I use a CartManager that is a singleton, it allows me to stock the product model
 https://github.com/yanisbourabaa/mobileprogramming/blob/master/SecondClass/app/src/main/java/com/example/yanisbourabaa/secondclass/manager/CartManager.java
 
 I use putExtra() between the CartActivity and the finishActivity.
+
+#SecondClass (BIS)
+
+Now when we click on a picture, it opens the recipe : 
+https://github.com/yanisbourabaa/mobileprogramming/blob/master/preview/secondclass/recipe.png
+There is the rating for each menu :
+https://github.com/yanisbourabaa/mobileprogramming/blob/master/preview/secondclass/rating.png
+we can call the restaurant in the toolbar:https://github.com/yanisbourabaa/mobileprogramming/blob/master/preview/secondclass/call.png
