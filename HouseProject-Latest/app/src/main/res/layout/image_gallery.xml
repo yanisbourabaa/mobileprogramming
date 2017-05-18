@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/current_image"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/previous_btn"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_stat"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textStyle="normal|italic"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/previous_btn"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/previous_btn"
+            android:text="Next"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+</LinearLayout>
