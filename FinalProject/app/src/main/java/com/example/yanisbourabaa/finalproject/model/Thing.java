@@ -5,12 +5,14 @@ package com.example.yanisbourabaa.finalproject.model;
  */
 
 public class Thing {
+    private final int progress;
     private String thing;
     private boolean possible;
 
-    public Thing(String thing, boolean possible) {
+    public Thing(String thing, boolean possible, int progress) {
         this.thing = thing;
         this.possible = possible;
+        this.progress = progress;
     }
 
     public String getThing() {
@@ -27,5 +29,9 @@ public class Thing {
 
     public void setPossible(boolean possible) {
         this.possible = possible;
+    }
+
+    public int getProgress() {
+        return progress;
     }
 }

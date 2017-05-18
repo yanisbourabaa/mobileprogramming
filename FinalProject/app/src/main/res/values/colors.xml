@@ -7,4 +7,5 @@
     <color name="grey">#bdc3c7</color>
     <color name="whitepale">#AAFFFFFF</color>
     <color name="colorAccentDark">#2C81BA</color>
+    <color name="colorPrimarypale">#AAf1c40f</color>
 </resources>

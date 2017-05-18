@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import com.example.yanisbourabaa.finalproject.R;
 import com.example.yanisbourabaa.finalproject.datamanagers.DataManager;
@@ -44,7 +45,9 @@ public class AddGoodThingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String sThing = materialEditText.getText().toString();
                 if (!sThing.isEmpty()) {
-                    Thing thing = new Thing(sThing, mSwitch.isActivated());
+                    Thing thing = new Thing(sThing, mSwitch.isActivated(), mSeekBar.getProgress());
+                    if (mSwitch.isActivated())
+                        mDataManager.addHappyThing(thing);
                     if (empty)
                         mDataManager.addThing(thing);
                     else

@@ -31,6 +31,9 @@ dependencies {
     // MaterialEditText
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
 
+    // MPandroidChart
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.android.support:support-v4:25.1.0'
     testCompile 'junit:junit:4.12'}

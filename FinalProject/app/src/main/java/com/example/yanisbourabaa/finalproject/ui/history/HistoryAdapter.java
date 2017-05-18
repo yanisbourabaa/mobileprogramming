@@ -25,7 +25,6 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.MyViewHo
     public HistoryAdapter(Context context) {
         this.context = context;
         days = DataManagerImpl.getInstance().getDays();
-        days.remove(days.get(days.size() -1));
     }
 
     @Override
@@ -44,7 +43,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.MyViewHo
 
     @Override
     public int getItemCount() {
-        return days.size();
+        return days.size() - 1;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

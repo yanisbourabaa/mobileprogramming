@@ -15,4 +15,7 @@ public interface DataManager {
     void addDay(Day day);
     void addThing(Thing thing);
     void changeThing(int index, Thing thing);
+    void addHappyThing(String happy);
+    void addHappyThing(Thing happy);
+    String getRandomHappy();
 }
