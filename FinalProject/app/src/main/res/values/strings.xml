@@ -7,4 +7,7 @@
     <string name="home">Home</string>
     <string name="history">History</string>
     <string name="good_thing">Good Thing</string>
+    <string name="red">red</string>
+    <string name="blue">blue</string>
+    <string name="orange">orange</string>
 </resources>

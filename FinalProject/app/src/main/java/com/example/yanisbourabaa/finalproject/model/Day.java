@@ -1,5 +1,7 @@
 package com.example.yanisbourabaa.finalproject.model;
 
+import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,24 +10,30 @@ import java.util.List;
  */
 public class Day {
     private List<Thing> things = new ArrayList<>();
+    private String date;
 
-    public Day() {
+    public Day(String date) {
+        this.date = date;
     }
 
-    public Day(List<Thing> things) {
+    public Day(String date, List<Thing> things) {
         this.things = things;
+        this.date = date;
     }
 
-    public Day(Thing thing1) {
+    public Day(String date, Thing thing1) {
         this.things.add(thing1);
+        this.date = date;
     }
 
-    public Day(Thing thing1, Thing thing2) {
+    public Day(String date, Thing thing1, Thing thing2) {
+        this.date = date;
         this.things.add(thing1);
         this.things.add(thing2);
     }
 
-    public Day(Thing thing1, Thing thing2, Thing thing3) {
+    public Day(String date, Thing thing1, Thing thing2, Thing thing3) {
+        this.date = date;
         this.things.add(thing1);
         this.things.add(thing2);
         this.things.add(thing3);
@@ -49,5 +57,9 @@ public class Day {
 
     public List<Thing> getThings() {
         return things;
+    }
+
+    public String getDate() {
+        return date;
     }
 }

@@ -59,14 +59,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        mDataManager.addDay(new Day(new Thing("Had good mark in mobile programmind", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
-        mDataManager.addDay(new Day(new Thing("Had good mark in mobile programmind", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
-        mDataManager.addDay(new Day(new Thing("Had good mark in mobile programmind", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
-        mDataManager.addDay(new Day(new Thing("Had good mark in mobile programmind", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
-        mDataManager.addDay(new Day(new Thing("Had good mark in mobile programmind", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
-        mDataManager.addDay(new Day(new Thing("Had good mark in mobile programmind", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
-        mDataManager.addDay(new Day(new Thing("Had good mark in mobile programmind", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
-        mDataManager.addDay(new Day(new Thing("Had good mark in mobile programmind", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
-        mDataManager.addDay(new Day());
+        mDataManager.addDay(new Day("May 11", new Thing("Had good mark in mobile programming", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
+        mDataManager.addDay(new Day("May 10", new Thing("Had good mark in mobile programming", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
+        mDataManager.addDay(new Day("May 9", new Thing("Had good mark in mobile programming", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
+        mDataManager.addDay(new Day("May 8", new Thing("Had good mark in mobile programming", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
+        mDataManager.addDay(new Day("May 7", new Thing("Had good mark in mobile programming", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
+        mDataManager.addDay(new Day("May 6", new Thing("Had good mark in mobile programming", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
+        mDataManager.addDay(new Day("May 5", new Thing("Had good mark in mobile programming", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
+        mDataManager.addDay(new Day("May 4", new Thing("Had good mark in mobile programming", false), new Thing("had a hug from my crush", false), new Thing("cooked an amazing meal", false)));
+        mDataManager.addDay(new Day("May 12"));
     }
 }
