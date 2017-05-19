@@ -45,6 +45,7 @@ public class AddGoodThingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String sThing = materialEditText.getText().toString();
                 if (!sThing.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), sThing + " added !", Toast.LENGTH_SHORT).show();
                     Thing thing = new Thing(sThing, mSwitch.isActivated(), mSeekBar.getProgress());
                     if (mSwitch.isActivated())
                         mDataManager.addHappyThing(thing);

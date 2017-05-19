@@ -61,7 +61,7 @@ public class DataManagerImpl implements  DataManager  {
 
     @Override
     public String getRandomHappy() {
-        int randomNum = ThreadLocalRandom.current().nextInt(0, happyThings.size() + 1);
+        int randomNum = ThreadLocalRandom.current().nextInt(0, happyThings.size() - 1);
         return happyThings.get(randomNum).getThing();
     }
 }
